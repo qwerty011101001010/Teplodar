@@ -14,20 +14,7 @@ class Resoult : AppCompatActivity() {
         setContentView(binding.root)
         binding.buttonChoice.setOnClickListener {
             val intent = Intent(this, TochnoResoult::class.java)
-            dom = "Дом\nХата\n1) Рем.Раструб\n2) Труба 110 - 1м\n3) Компенсационная муфта 110ом\n" +
-                    "Хата\n" +
-                    "1) Рем.Раструб\n" +
-                    "2) Труба 110 - 1м\n" +
-                    "3) Компенсационная муфта 110ом\n" +
-                    "Хата\n" +
-                    "1) Рем.Раструб\n" +
-                    "2) Труба 110 - 1м\n" +
-                    "3) Компенсационная муфта 110ом\n" +
-                    "Хата\n" +
-                    "1) Рем.Раструб\n" +
-                    "2) Труба 110 - 1м\n" +
-                    "3) Компенсационная муфта 110"
-
+            dom = "Дом\nХата\n1) Рем.Раструб\n2) Труба 110 - 1м\n3) Компенсационная муфта 110"
             chislo=binding.editTextTextPersonName.text.toString()
             startActivity(intent)
         }
