@@ -3,7 +3,7 @@ package com.example.teplodar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.teplodar.databinding.ActivityMainBinding
+
 import com.example.teplodar.databinding.ActivityResoultBinding
 
 class Resoult : AppCompatActivity() {
