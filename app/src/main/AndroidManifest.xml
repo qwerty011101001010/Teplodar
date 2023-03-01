@@ -12,6 +12,23 @@
         android:theme="@style/Theme.Teplodar"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Teplodar.NoActionBar" />
+        <activity
+            android:name=".MainActivityTraTaTa"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RadiatoriVopros"
+            android:exported="false" />
+        <activity
+            android:name=".Radiatori3"
+            android:exported="false" />
+        <activity
             android:name=".Radiatory2"
             android:exported="false" />
         <activity

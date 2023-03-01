@@ -13,9 +13,12 @@ class Radiatori : AppCompatActivity() {
         binding=ActivityRadiatoriBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.buttonYes.setOnClickListener{
-            val intent = Intent()
+            val intent = Intent(this,Radiatory2::class.java)
+            peredelkaRadio = "Переделка радиаторов - Да"
+            startActivity(intent)
         }
-
-
+    }
+    companion object{
+        var peredelkaRadio:String=""
     }
 }
