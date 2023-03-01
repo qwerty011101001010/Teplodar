@@ -12,7 +12,7 @@ import com.example.teplodar.databinding.FragmentBlank3Binding
 import com.example.teplodar.databinding.FragmentBlankBinding
 
 class BlankFragment3 : Fragment() {
-    lateinit var binding:FragmentBlank3Binding
+    lateinit var binding: FragmentBlank3Binding
 
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
@@ -21,15 +21,33 @@ class BlankFragment3 : Fragment() {
     ): View? {
         binding = FragmentBlank3Binding.inflate(inflater)
 
-
-
-
+        binding.buttonFiltrYes.setOnClickListener {
+            //cдесь записывать данные
+            FilrtYes = "Фильтр-Да\n1) Фильтр 1шт \n2) уголок 1/2 в.н. 1 шт  1/2 н.н. 2 шт\n3 ) Хомут 40\n " +
+                    "4 ) хомут 2шт\n5 ) шланг 0,3\n6 ) переход 1/2  на штуцер 1 шт\n7 ) заглушка 50º"
+            activity!!
+                .supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.frameLayout1, BlankFragment4.newInstance())
+                .commitNow()
+        }
+        binding.buttonFiltrNo.setOnClickListener {
+            FiltrNo = "Фильтр-нет"
+            activity!!
+                .supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.frameLayout1, BlankFragment4.newInstance())
+                .commitNow()
+        }
 
 
         return binding.root
     }
+
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment3()
+        var FilrtYes: String = ""
+        var FiltrNo: String = ""
     }
 }
