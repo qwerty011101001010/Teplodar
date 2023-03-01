@@ -1,12 +1,10 @@
 package com.example.teplodar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.teplodar.OtpuskKanal.Companion.viborkanal
-import com.example.teplodar.ViborOpuskaKan.Companion.viboropuskakan
-import com.example.teplodar.ViborOpuskaKan.Companion.vibortroynik
 import com.example.teplodar.databinding.ActivityRadiatoriBinding
-import com.example.teplodar.viborObject.Companion.otvetKv
+
 
 class Radiatori : AppCompatActivity() {
     lateinit var binding:ActivityRadiatoriBinding
@@ -14,7 +12,10 @@ class Radiatori : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityRadiatoriBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.buttonYes.setOnClickListener{
+            val intent = Intent()
+        }
 
-        binding.textVivod.setText(otvetKv+"\n"+viborkanal+"\n"+viboropuskakan+"\n"+vibortroynik)
+
     }
 }

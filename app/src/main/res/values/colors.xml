@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="BG">#2B2929</color>
+    <color name="BGButton">#383535</color>
+    <color name="NameButton">#F9F9F9</color>
+    <color name="StrokeButton">#F9F9F9</color>
+    <color name="ColorQuestion">#FF9A02</color>
+    <color name="BGAnimButton">#FF9A02</color>
 </resources>
