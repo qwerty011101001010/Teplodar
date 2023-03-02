@@ -21,7 +21,6 @@ class BlankFragment : Fragment() {
 
         binding.buttonNext2.setOnClickListener{
             //cдесь записывать данные
-            naborkaNaVod="к-т"
             naborkaNaVodZnach=binding.naborkaNaVvod.text.toString()
             activity!!
                 .supportFragmentManager
@@ -38,6 +37,5 @@ class BlankFragment : Fragment() {
         @JvmStatic
         fun newInstance() = BlankFragment()
         var naborkaNaVodZnach:String=""
-        var naborkaNaVod:String=""
     }
 }

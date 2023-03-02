@@ -29,7 +29,7 @@ class BlankFragment9 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragment9.newInstance1())
+                    .replace(R.id.frameLayout1, BlankFragment2_1.newInstance())
                     .commitNow()
             }
             else{
@@ -47,7 +47,7 @@ class BlankFragment9 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragment9.newInstance1())
+                    .replace(R.id.frameLayout1, BlankFragment2_1.newInstance())
                     .commitNow()
             }
             else{
@@ -66,7 +66,7 @@ class BlankFragment9 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment9()
-        fun newInstance1() = BlankFragment10()
+
         var ZadShitYes: String = ""
         var ZadShitNo: String = ""
 

@@ -6,8 +6,17 @@ import android.view.LayoutInflater
 import android.view.PointerIcon
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.example.teplodar.Fragment.BlankFragment.Companion.naborkaNaVodZnach
+import com.example.teplodar.Fragment.BlankFragment2.Companion.NeptunNo
+import com.example.teplodar.Fragment.BlankFragment2.Companion.NeptunYes
+import com.example.teplodar.Fragment.BlankFragment2_1.Companion.NeptunNo1
+import com.example.teplodar.Fragment.BlankFragment2_1.Companion.NeptunYes1
 import com.example.teplodar.R
+import com.example.teplodar.Radiatori
+import com.example.teplodar.Radiatori3
+import com.example.teplodar.Radiatory2
 import com.example.teplodar.databinding.*
 
 class BlankFragment10 : Fragment() {
@@ -20,16 +29,7 @@ class BlankFragment10 : Fragment() {
     ): View? {
         binding = FragmentBlank10Binding.inflate(inflater)
 
-        binding.buttonVtoroyKrug.setOnClickListener {
-            //cдесь записывать данные
-            ZadShitYes = "Задний щит - Да\n1) Лист металла "
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
-                .commitNow()
-        }
-
+        
 
 
         return binding.root
@@ -37,8 +37,11 @@ class BlankFragment10 : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragment9()
-        var ZadShitYes: String = ""
-        var ZadShitNo: String = ""
+        fun newInstance() = BlankFragment10()
+
+
+
+
+
     }
 }
