@@ -7,6 +7,7 @@ import android.view.PointerIcon
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.teplodar.Fragment.BlankFragment.Companion.naborkaNaVodZnach
 import com.example.teplodar.R
 import com.example.teplodar.databinding.*
 
@@ -23,19 +24,39 @@ class BlankFragment9 : Fragment() {
         binding.buttonZadShiiitYes.setOnClickListener {
             //cдесь записывать данные
             ZadShitYes = "Задний щит - Да\n1) Лист металла "
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
-                .commitNow()
+
+            if(naborkaNaVodZnach > 1.toString()){
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment9.newInstance1())
+                    .commitNow()
+            }
+            else{
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment9.newInstance())
+                    .commitNow()
+            }
+
         }
         binding.buttonZadshiiitNo.setOnClickListener {
             ZadShitNo = "Задний щит - Нет"
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
-                .commitNow()
+            if(naborkaNaVodZnach > 1.toString()){
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment9.newInstance1())
+                    .commitNow()
+            }
+            else{
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment9.newInstance())
+                    .commitNow()
+            }
         }
 
 
@@ -45,7 +66,9 @@ class BlankFragment9 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment9()
+        fun newInstance1() = BlankFragment10()
         var ZadShitYes: String = ""
         var ZadShitNo: String = ""
+
     }
 }
