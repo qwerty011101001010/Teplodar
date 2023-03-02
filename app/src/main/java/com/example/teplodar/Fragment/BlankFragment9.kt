@@ -26,7 +26,7 @@ class BlankFragment9 : Fragment() {
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment8.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
                 .commitNow()
         }
         binding.buttonZadshiiitNo.setOnClickListener {
@@ -34,7 +34,7 @@ class BlankFragment9 : Fragment() {
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment8.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
                 .commitNow()
         }
 
@@ -44,7 +44,7 @@ class BlankFragment9 : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragment8()
+        fun newInstance() = BlankFragment9()
         var ZadShitYes: String = ""
         var ZadShitNo: String = ""
     }
