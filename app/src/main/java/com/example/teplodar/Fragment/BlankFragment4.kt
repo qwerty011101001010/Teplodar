@@ -28,7 +28,7 @@ class BlankFragment4 : Fragment() {
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment4.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment5.newInstance())
                 .commitNow()
         }
         binding.buttonReductorNo.setOnClickListener {
@@ -36,7 +36,7 @@ class BlankFragment4 : Fragment() {
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment4.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment5.newInstance())
                 .commitNow()
         }
 

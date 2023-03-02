@@ -9,31 +9,31 @@ import androidx.fragment.app.Fragment
 import com.example.teplodar.R
 import com.example.teplodar.databinding.*
 
-class BlankFragment5 : Fragment() {
-    lateinit var binding: FragmentBlank5Binding
+class BlankFragment6 : Fragment() {
+    lateinit var binding: FragmentBlank6Binding
 
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBlank5Binding.inflate(inflater)
+        binding = FragmentBlank6Binding.inflate(inflater)
 
-        binding.buttonObratKlaponYes.setOnClickListener {
+        binding.buttonGryazYes.setOnClickListener {
             //cдесь записывать данные
-            KlaponYes = "Клапон - Да\n1) обратный клапан 1шт"
+            GryazYes = "Грязевик - Да\n1) Грязевик 1шт\n2) нипель 1/2 н.н. 1шт"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment6.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment7.newInstance())
                 .commitNow()
         }
-        binding.buttonObratKlaponNo.setOnClickListener {
-            KlaponNo = "Клапон - нет"
+        binding.buttonGryazNo.setOnClickListener {
+            GryazNo = "Грязевик - нет"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment6.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment7.newInstance())
                 .commitNow()
         }
 
@@ -43,8 +43,8 @@ class BlankFragment5 : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragment5()
-        var KlaponYes: String = ""
-        var KlaponNo: String = ""
+        fun newInstance() = BlankFragment6()
+        var GryazYes: String = ""
+        var GryazNo: String = ""
     }
 }

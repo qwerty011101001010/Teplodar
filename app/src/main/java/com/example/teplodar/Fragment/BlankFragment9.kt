@@ -3,37 +3,38 @@ package com.example.teplodar.Fragment
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.PointerIcon
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.teplodar.R
 import com.example.teplodar.databinding.*
 
-class BlankFragment5 : Fragment() {
-    lateinit var binding: FragmentBlank5Binding
+class BlankFragment9 : Fragment() {
+    lateinit var binding: FragmentBlank9Binding
 
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBlank5Binding.inflate(inflater)
+        binding = FragmentBlank9Binding.inflate(inflater)
 
-        binding.buttonObratKlaponYes.setOnClickListener {
+        binding.buttonZadShiiitYes.setOnClickListener {
             //cдесь записывать данные
-            KlaponYes = "Клапон - Да\n1) обратный клапан 1шт"
+            ZadShitYes = "Задний щит - Да\n1) Лист металла "
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment6.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment8.newInstance())
                 .commitNow()
         }
-        binding.buttonObratKlaponNo.setOnClickListener {
-            KlaponNo = "Клапон - нет"
+        binding.buttonZadshiiitNo.setOnClickListener {
+            ZadShitNo = "Задний щит - Нет"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment6.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment8.newInstance())
                 .commitNow()
         }
 
@@ -43,8 +44,8 @@ class BlankFragment5 : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragment5()
-        var KlaponYes: String = ""
-        var KlaponNo: String = ""
+        fun newInstance() = BlankFragment8()
+        var ZadShitYes: String = ""
+        var ZadShitNo: String = ""
     }
 }

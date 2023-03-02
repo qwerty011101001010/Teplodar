@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.BlankFragment5">
+    tools:context=".Fragment.BlankFragment6">
 
     <Button
-        android:id="@+id/buttonObratKlaponNo"
+        android:id="@+id/buttonGryazNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
@@ -17,10 +17,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonObratKlaponYes" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonGryazYes" />
 
     <Button
-        android:id="@+id/buttonObratKlaponYes"
+        android:id="@+id/buttonGryazYes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
@@ -30,23 +30,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ObratKlapon" />
+        app:layout_constraintTop_toBottomOf="@+id/Gryazevik" />
 
     <TextView
-        android:id="@+id/ObratKlapon"
+        android:id="@+id/Gryazevik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="177dp"
-        android:text="Обратный клапон"
+        android:text="Грязевик"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
