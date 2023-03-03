@@ -36,7 +36,7 @@ class BlankFragment9 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragment9.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragment9_1.newInstance())
                     .commitNow()
             }
 
@@ -54,7 +54,7 @@ class BlankFragment9 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragment9.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragment9_1.newInstance())
                     .commitNow()
             }
         }
