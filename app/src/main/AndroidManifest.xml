@@ -23,7 +23,7 @@
             android:name=".FragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".RadiatoriVopros"
+            android:name=".FragmentRadioActivity"
             android:exported="false" />
         <activity
             android:name=".Radiatori3"

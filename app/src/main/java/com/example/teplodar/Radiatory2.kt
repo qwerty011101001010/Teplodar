@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
+import com.example.teplodar.Fragment.BlankFragmentRadio
 import com.example.teplodar.databinding.ActivityRadiatoriBinding
 import com.example.teplodar.databinding.ActivityRadiatory2Binding
 
@@ -16,7 +17,7 @@ class Radiatory2 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonNext.setOnClickListener{
-            val intent = Intent(this,Radiatori3::class.java)
+            val intent = Intent(this,FragmentRadioActivity::class.java)
             KolVoRadio="Количество радиаторов - "
             znachKolRadio=binding.numberRadio.text.toString()
             startActivity(intent)

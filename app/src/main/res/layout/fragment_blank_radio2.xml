@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Radiatori3">
+    android:background="#C18585"
+    tools:context=".Fragment.BlankFragmentRadio">
 
     <TextView
         android:id="@+id/textView7"
@@ -52,10 +53,10 @@
         android:id="@+id/buttonMetalloplast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="284dp"
         android:text="@string/ButtonMetalPlast"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
