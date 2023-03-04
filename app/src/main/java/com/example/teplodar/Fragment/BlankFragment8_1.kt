@@ -22,7 +22,7 @@ class BlankFragment8_1 : Fragment() {
 
         binding.buttonMetalloplast2.setOnClickListener {
             //cдесь записывать данные
-            Metalloplast21 = "Подвод - Да\nОСНОВНЫЕ\n1) переход 1/2 н.р. на 16мп\n2) труба 16 2м\n3) переход 20 на 16 мп\n4) сгон прямой 1/2"
+            Metalloplast21 = "Металлопластик \n ОСНОВНЫЕ\n1) переход 1/2 н.р. на 16мп\n2) труба 16 2м\n3) переход 20 на 16 мп\n4) сгон прямой 1/2"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()

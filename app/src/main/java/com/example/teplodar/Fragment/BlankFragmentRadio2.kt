@@ -33,7 +33,7 @@ class BlankFragmentRadio2 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio3.newInstance())
                     .commitNow()
             }
             else
@@ -52,7 +52,7 @@ class BlankFragmentRadio2 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio3.newInstance())
                     .commitNow()
             }
             else
@@ -70,7 +70,7 @@ class BlankFragmentRadio2 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio3.newInstance())
                     .commitNow()
             }
             else
@@ -90,7 +90,7 @@ class BlankFragmentRadio2 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio3.newInstance())
                     .commitNow()
             }
             else
@@ -108,7 +108,7 @@ class BlankFragmentRadio2 : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragmentRadio()
+        fun newInstance() = BlankFragmentRadio2()
         var otvet1: String = ""
 
 

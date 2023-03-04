@@ -20,17 +20,17 @@ class BlankFragment8 : Fragment() {
     ): View? {
         binding = FragmentBlank8Binding.inflate(inflater)
 
-        binding.buttonMetalloplast2.setOnClickListener {
+        binding.buttonMetalloplast21.setOnClickListener {
             //cдесь записывать данные
-            Metalloplast2 = "Подвод - Да\nОСНОВНЫЕ\n1) переход 1/2 н.р. на 16мп\n2) труба 16 2м\n3) переход 20 на 16 мп\n4) сгон прямой 1/2"
+            MetalOrPoly = "Металлопластик - ОСНОВНЫЕ\n1) переход 1/2 н.р. на 16мп\n2) труба 16 2м\n3) переход 20 на 16 мп\n4) сгон прямой 1/2"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.frameLayout1, BlankFragment9.newInstance())
                 .commitNow()
         }
-        binding.buttonPolypropilen.setOnClickListener {
-            Polypropilen = "Полипропилен - Да\n1) МРН 1шт"
+        binding.buttonPolypropilen21.setOnClickListener {
+            MetalOrPoly = "Полипропилен - Да\n1) МРН 1шт"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
@@ -45,7 +45,6 @@ class BlankFragment8 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment8()
-        var Metalloplast2: String = ""
-        var Polypropilen: String = ""
+        var MetalOrPoly: String = ""
     }
 }
