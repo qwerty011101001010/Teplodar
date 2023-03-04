@@ -15,7 +15,7 @@ import com.example.teplodar.Radiatory2
 import com.example.teplodar.Radiatory2.Companion.znachKolRadio
 import com.example.teplodar.databinding.*
 
-class BlankFragmentRadio2 : Fragment() {
+class BlankFragmentRadio3 : Fragment() {
     lateinit var binding: FragmentBlankRadio2Binding
 
     @SuppressLint("UseRequireInsteadOfGet")
@@ -27,7 +27,7 @@ class BlankFragmentRadio2 : Fragment() {
 
         binding.buttonMetalloplast.setOnClickListener{
 
-            otvet1 = "ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба МП 16 2м."
+            otvet2 = "ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба МП 16 2м."
 
             if(znachKolRadio > 1.toString()) {
                 activity!!
@@ -47,7 +47,7 @@ class BlankFragmentRadio2 : Fragment() {
 
         }
         binding.buttonShitik.setOnClickListener{
-            otvet1="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
+            otvet2="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
             if(znachKolRadio > 1.toString()) {
                 activity!!
                     .supportFragmentManager
@@ -65,7 +65,7 @@ class BlankFragmentRadio2 : Fragment() {
             }
         }
         binding.buttonKran12.setOnClickListener{
-            otvet1="Кран 1/2 - 2 шт."
+            otvet2="Кран 1/2 - 2 шт."
             if(znachKolRadio > 1.toString()) {
                 activity!!
                     .supportFragmentManager
@@ -85,7 +85,7 @@ class BlankFragmentRadio2 : Fragment() {
 
 
         binding.buttonEvrokonus.setOnClickListener{
-            otvet1="Евроконус 16 - 2 шт"
+            otvet2="Евроконус 16 - 2 шт"
             if(znachKolRadio > 1.toString()) {
                 activity!!
                     .supportFragmentManager
@@ -109,7 +109,7 @@ class BlankFragmentRadio2 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragmentRadio()
-        var otvet1: String = ""
+        var otvet2: String = ""
 
 
     }

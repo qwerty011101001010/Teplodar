@@ -42,27 +42,60 @@ class BlankFragmentRadio : Fragment() {
 
         }
         binding.buttonShitik.setOnClickListener{
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
-                .commitNow()
+            otvet="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
+            if(znachKolRadio > 1.toString()) {
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .commitNow()
+            }
+            else
+            {
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment.newInstance())
+                    .commitNow()
+            }
         }
         binding.buttonKran12.setOnClickListener{
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
-                .commitNow()
+            otvet="Кран 1/2 - 2 шт."
+            if(znachKolRadio > 1.toString()) {
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .commitNow()
+            }
+            else
+            {
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment.newInstance())
+                    .commitNow()
+            }
         }
 
 
         binding.buttonEvrokonus.setOnClickListener{
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
-                .commitNow()
+            otvet="Евроконус 16 - 2 шт"
+            if(znachKolRadio > 1.toString()) {
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .commitNow()
+            }
+            else
+            {
+                activity!!
+                    .supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frameLayout1, BlankFragment.newInstance())
+                    .commitNow()
+            }
         }
 
         return binding.root
