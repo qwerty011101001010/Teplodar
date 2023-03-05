@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.teplodar.R
 import com.example.teplodar.databinding.*
 
-class BlankFragmentTepliyPol : Fragment() {
+class BlankFragmentTepliyPol3 : Fragment() {
     lateinit var binding: FragmentBlankTepliyPolBinding
 
     @SuppressLint("UseRequireInsteadOfGet")
