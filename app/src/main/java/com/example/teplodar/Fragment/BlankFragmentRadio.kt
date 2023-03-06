@@ -28,7 +28,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragment.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragment2.newInstance())
                     .commitNow()
             }
             else
@@ -36,7 +36,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragment.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragment6.newInstance())
                     .commitNow()
             }
 
