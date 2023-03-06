@@ -25,7 +25,7 @@ class BlankFragmentTepliyPol : Fragment() {
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragmentTepliyPol2.newInstance())
+                .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
                 .commitNow()
         }
         binding.buttonNo.setOnClickListener {
