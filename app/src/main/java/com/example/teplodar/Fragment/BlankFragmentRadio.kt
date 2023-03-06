@@ -47,7 +47,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentTepliyPol.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else
@@ -65,7 +65,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentTepliyPol.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else
@@ -85,7 +85,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentTepliyPol.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else

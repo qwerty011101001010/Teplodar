@@ -21,7 +21,7 @@ class BlankFragment9 : Fragment() {
     ): View? {
         binding = FragmentBlank9Binding.inflate(inflater)
 
-        binding.buttonZadShiiitYes1.setOnClickListener {
+        binding.buttonZadShiiitYes.setOnClickListener {
             //cдесь записывать данные
             ZadShitYes = "Задний щит - Да\n1) Лист металла "
 
@@ -36,7 +36,7 @@ class BlankFragment9 : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragment9_1.newInstance())
                     .commitNow()
             }
 
@@ -51,11 +51,10 @@ class BlankFragment9 : Fragment() {
                     .commitNow()
             }
             else{
-
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragment9_1.newInstance())
                     .commitNow()
             }
         }
@@ -70,7 +69,6 @@ class BlankFragment9 : Fragment() {
 
         var ZadShitYes: String = ""
         var ZadShitNo: String = ""
-
 
     }
 }

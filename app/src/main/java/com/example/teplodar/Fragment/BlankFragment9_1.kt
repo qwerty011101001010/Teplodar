@@ -23,22 +23,11 @@ class BlankFragment9_1 : Fragment() {
     ): View? {
         binding = FragmentBlank91Binding.inflate(inflater)
 
-        binding.buttonZadShiiitYes1.setOnClickListener {
-            //cдесь записывать данные
-           ZadShitOtvet1 = "Задний щит - да"
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
-                .commitNow()
-        }
-        binding.buttonZadshiiitNo1.setOnClickListener {
-            ZadShitOtvet1= "Задний щит - нет"
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
-                .commitNow()
+        binding.buttonZadShiiitYes1.setOnClickListener{
+            requireActivity().run{
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
         }
 
         return binding.root
@@ -48,7 +37,8 @@ class BlankFragment9_1 : Fragment() {
         @JvmStatic
         fun newInstance() = BlankFragment9_1()
 
-        var ZadShitOtvet1: String = ""
+        var ZadShitYes1: String = ""
+        var ZadShitNo1: String = ""
 
     }
 }

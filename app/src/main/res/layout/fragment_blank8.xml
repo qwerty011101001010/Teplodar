@@ -7,7 +7,7 @@
     tools:context=".Fragment.BlankFragment8">
 
     <Button
-        android:id="@+id/buttonMetalloplast21"
+        android:id="@+id/buttonMetalloplast2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
@@ -17,14 +17,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <Button
-        android:id="@+id/buttonPolypropilen21"
+        android:id="@+id/buttonPolypropilen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="Полипропилен "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMetalloplast21" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMetalloplast2" />
 
     <TextView
         android:id="@+id/textView23"
