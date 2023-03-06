@@ -43,7 +43,7 @@ class BlankFragmentTepliyPol : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragmentTepliyPol2()
+        fun newInstance() = BlankFragmentTepliyPol()
         var OtvetPol: String = ""
     }
 }

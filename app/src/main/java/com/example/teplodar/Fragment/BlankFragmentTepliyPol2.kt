@@ -17,24 +17,15 @@ class BlankFragmentTepliyPol2 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBlankTepliyPol2Binding.inflate(inflater)
-
-        binding.buttonNext.setOnClickListener {
-            //cдесь записывать данные
-            OtvetPol = "Теплый пол - да"
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
-                .commitNow()
-        }
         binding.buttonNext.setOnClickListener{
             //cдесь записывать данные
-            OtvetKolKol =binding.numberkollectors.text.toString()
+            OtvetKolKol = binding.numberkollectors.text.toString()
+            OsnovaPola = "1) Коллектор на "+OtvetKolKol+" контуров\n2) насосно смесительный узел 1шт\n3) насос  1 шт\n4) преход 1ʹв.р. на 3/4 н.р.\n" +
+                    "5) кран 3/4  в.н. \n6) сгон прямой ¾\n7) eвроконус - "+ OtvetKolKol.toInt()*2+"\nхуй"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment2.newInstance())
+                .replace(R.id.frameLayout1, BlankFragmentTepliyPol3.newInstance())
                 .commitNow()
 
         }
@@ -46,7 +37,7 @@ class BlankFragmentTepliyPol2 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragmentTepliyPol2()
-        var OtvetPol: String = ""
+        var OsnovaPola: String = ""
         var OtvetKolKol: String = ""
     }
 }

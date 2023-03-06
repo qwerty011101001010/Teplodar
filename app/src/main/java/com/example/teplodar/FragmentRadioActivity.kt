@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.teplodar.Fragment.BlankFragment
 import com.example.teplodar.Fragment.BlankFragmentRadio
+import com.example.teplodar.Fragment.BlankFragmentTepliyPol
 
 
 class FragmentRadioActivity : AppCompatActivity() {

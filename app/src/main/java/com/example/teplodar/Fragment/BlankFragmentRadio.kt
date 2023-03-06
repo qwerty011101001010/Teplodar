@@ -28,7 +28,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragment2.newInstance())
                     .commitNow()
             }
             else
@@ -36,7 +36,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragment.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragment6.newInstance())
                     .commitNow()
             }
 
@@ -47,7 +47,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentTepliyPol.newInstance())
                     .commitNow()
             }
             else
@@ -65,7 +65,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentTepliyPol.newInstance())
                     .commitNow()
             }
             else
@@ -85,7 +85,7 @@ class BlankFragmentRadio : Fragment() {
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentTepliyPol.newInstance())
                     .commitNow()
             }
             else
@@ -96,6 +96,7 @@ class BlankFragmentRadio : Fragment() {
                     .replace(R.id.frameLayout1, BlankFragment.newInstance())
                     .commitNow()
             }
+
         }
 
         return binding.root

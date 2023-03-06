@@ -10,10 +10,10 @@ import com.example.teplodar.R
 import com.example.teplodar.databinding.FragmentBlankBinding
 
 class BlankFragment : Fragment() {
-    lateinit var binding:FragmentBlankBinding
+    lateinit var binding: FragmentBlankBinding
 
-            @SuppressLint("UseRequireInsteadOfGet")
-            override fun onCreateView(
+    @SuppressLint("UseRequireInsteadOfGet")
+    override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -21,13 +21,13 @@ class BlankFragment : Fragment() {
 
         binding.buttonNext2.setOnClickListener{
             //cдесь записывать данные
-            naborkaNaVodZnach=binding.naborkaNaVvod.text.toString()
+
+            naborkaNaVodZnach =binding.naborkaNaVvod.text.toString()
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.frameLayout1, BlankFragment2.newInstance())
                 .commitNow()
-
         }
 
 
@@ -39,3 +39,4 @@ class BlankFragment : Fragment() {
         var naborkaNaVodZnach:String=""
     }
 }
+
