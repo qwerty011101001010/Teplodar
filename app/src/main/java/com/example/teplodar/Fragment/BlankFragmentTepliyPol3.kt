@@ -9,33 +9,26 @@ import androidx.fragment.app.Fragment
 import com.example.teplodar.R
 import com.example.teplodar.databinding.*
 
-class BlankFragmentTepliyPol : Fragment() {
-    lateinit var binding: FragmentBlankTepliyPolBinding
+class BlankFragmentTepliyPol3 : Fragment() {
+    lateinit var binding: FragmentBlankTepliyPol3Binding
 
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBlankTepliyPolBinding.inflate(inflater)
+        binding = FragmentBlankTepliyPol3Binding.inflate(inflater)
 
-        binding.buttonPolYes.setOnClickListener {
+        binding.buttonNext.setOnClickListener {
             //cдесь записывать данные
-            OtvetPol = "Теплый пол - да"
+            
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragmentTepliyPol2.newInstance())
+                .replace(R.id.frameLayout1, BlankFragmentTepliyPol.newInstance())
                 .commitNow()
         }
-        binding.buttonPolNo.setOnClickListener {
-            OtvetPol = "Теплый пол - нет"
-            activity!!
-                .supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragmentTepliyPol2.newInstance())
-                .commitNow()
-        }
+
 
 
         return binding.root
@@ -43,7 +36,7 @@ class BlankFragmentTepliyPol : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragmentTepliyPol()
-        var OtvetPol: String = ""
+        fun newInstance() = BlankFragmentTepliyPol3()
+        var OtvetKolKol: String = ""
     }
 }
