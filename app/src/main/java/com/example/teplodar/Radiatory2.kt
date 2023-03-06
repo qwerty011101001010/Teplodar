@@ -17,7 +17,7 @@ class Radiatory2 : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonNext.setOnClickListener{
-            val intent = Intent(this,FragmentRadioActivity::class.java)
+            val intent = Intent(this,FragmentActivity::class.java)
             KolVoRadio="Количество радиаторов - "
             znachKolRadio=binding.numberRadio.text.toString()
             startActivity(intent)

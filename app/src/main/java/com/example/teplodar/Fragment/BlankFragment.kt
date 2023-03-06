@@ -1,11 +1,13 @@
 package com.example.teplodar.Fragment
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.teplodar.FragmentActivity
 import com.example.teplodar.R
 import com.example.teplodar.databinding.FragmentBlankBinding
 
@@ -20,14 +22,16 @@ class BlankFragment : Fragment() {
         binding = FragmentBlankBinding.inflate(inflater)
 
         binding.buttonNext2.setOnClickListener{
-            //cдесь записывать данные
-
-            naborkaNaVodZnach =binding.naborkaNaVvod.text.toString()
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.frameLayout1, BlankFragment2.newInstance())
                 .commitNow()
+
+                        //cдесь записывать данные
+
+            naborkaNaVodZnach =binding.naborkaNaVvod.text.toString()
+
         }
 
 

@@ -3,6 +3,8 @@ package com.example.teplodar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.teplodar.Fragment.BlankFragment
+import com.example.teplodar.Fragment.BlankFragment2
+import com.example.teplodar.Fragment.BlankFragmentRadio
 import com.example.teplodar.databinding.FragmentBlankBinding
 
 class FragmentActivity : AppCompatActivity() {
@@ -11,7 +13,7 @@ class FragmentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_fragment)
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.frameLayout1,BlankFragment.newInstance())
+            .replace(R.id.frameLayout1, BlankFragmentRadio.newInstance())
             .commit()
     }
 }
