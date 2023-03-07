@@ -21,7 +21,7 @@ class BlankFragmentTepliyPol3 : Fragment() {
 
         binding.buttonNext.setOnClickListener {
             //cдесь записывать данные
-            
+
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
@@ -37,6 +37,8 @@ class BlankFragmentTepliyPol3 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragmentTepliyPol3()
-        var OtvetKolKol: String = ""
+        var OtvetVsyakayaHren: String = ""
+
+
     }
 }
