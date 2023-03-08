@@ -6,7 +6,8 @@ import android.os.Bundle
 import com.example.teplodar.databinding.ActivityRadiatoriBinding
 
 
-class Radiatori : AppCompatActivity() {
+class
+Radiatori : AppCompatActivity() {
     lateinit var binding:ActivityRadiatoriBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +16,16 @@ class Radiatori : AppCompatActivity() {
         binding.buttonYes.setOnClickListener{
             val intent = Intent(this,Radiatory2::class.java)
             peredelkaRadio = "Переделка радиаторов - Да"
+            startActivity(intent)
+        }
+        binding.buttoNO.setOnClickListener{
+            val intent = Intent(this,FragmentActivity::class.java)
+            peredelkaRadio = "Переделка радиаторов - Нет"
+            startActivity(intent)
+        }
+        binding.buttonBack3.setOnClickListener{
+            val intent = Intent(this,OtpuskKanal::class.java)
+
             startActivity(intent)
         }
     }

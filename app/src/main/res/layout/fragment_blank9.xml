@@ -4,17 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BG"
     tools:context=".Fragment.BlankFragment9">
+
+    <Button
+        android:id="@+id/buttonBack13"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="67dp"
+        android:backgroundTint="@color/BG"
+        android:text="@string/ButtonBack"
+        android:textColor="@color/NameButton"
+        android:textSize="24sp"
+        app:cornerRadius="9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonZadshiiitNo"
+        app:strokeColor="@color/BGButton"
+        app:strokeWidth="1sp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconlogo" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="88dp"
         android:text="Выбор"
-        android:textSize="24sp"
+        android:textColor="@color/ColorQuestion"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,37 +51,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="85dp"
         android:layout_marginEnd="177dp"
         android:text="Задний щит"
+        android:textColor="@color/ColorQuestion"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <Button
         android:id="@+id/buttonZadShiiitYes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
+        app:strokeColor="@color/StrokeButton"
+        app:strokeWidth="1sp"
+        android:textSize="24dp"
+        app:cornerRadius="9sp"
+        android:backgroundTint="@color/BGButton"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="162dp"
         android:text="@string/ButtonYes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zadshiiit" />
 
     <Button
         android:id="@+id/buttonZadshiiitNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="162dp"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/BGButton"
         android:text="@string/ButtonNo"
+        android:textSize="24dp"
+        app:cornerRadius="9sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonZadShiiitYes" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonZadShiiitYes"
+        app:strokeColor="@color/StrokeButton"
+        app:strokeWidth="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

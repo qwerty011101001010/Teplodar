@@ -8,32 +8,70 @@
     tools:context=".ViborOpuskaKan">
 
     <Button
-        android:id="@+id/buttonKrest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
-        android:text="Крестовина"
+        android:id="@+id/buttonBack2"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="67dp"
+        android:backgroundTint="@color/BG"
+        android:text="@string/ButtonBack"
+        android:textColor="@color/NameButton"
+        android:textSize="24sp"
+        app:cornerRadius="9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonKrest"
+        app:strokeColor="@color/BGButton"
+        app:strokeWidth="1sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconlogo" />
+
+    <Button
+        android:id="@+id/buttonKrest"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/BGButton"
+        android:text="@string/ButtonKrestovina"
+        android:textSize="24sp"
+        app:cornerRadius="9sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTroynik"
+        app:strokeColor="@color/StrokeButton"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/buttonTroynik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
-        android:text="Тройник"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="102dp"
+        android:backgroundTint="@color/BGButton"
+        android:text="@string/ButtonTroynik"
+        android:textSize="24dp"
+        app:cornerRadius="9sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:strokeColor="@color/StrokeButton"
+        app:strokeWidth="1sp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="163dp"
         android:text="Выбор"
         android:textColor="#FF9800"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

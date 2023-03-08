@@ -23,7 +23,7 @@ class BlankFragment9_1 : Fragment() {
     ): View? {
         binding = FragmentBlank91Binding.inflate(inflater)
 
-        binding.buttonZadShiiitYes1.setOnClickListener{
+        binding.buttonZadShiiitYes.setOnClickListener{
             requireActivity().run{
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()

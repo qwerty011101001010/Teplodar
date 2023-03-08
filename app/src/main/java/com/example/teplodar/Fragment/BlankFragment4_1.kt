@@ -24,7 +24,7 @@ class BlankFragment4_1 : Fragment() {
 
         binding.buttonReductorYes.setOnClickListener {
             //cдесь записывать данные
-            ReductorYes = "Редуктор-Да\n1) Редуктор 1шт  \n2)  нипель 1/2 н.н. 1шт"
+            ReductorYes1 = "Редуктор-Да\n1) Редуктор 1шт  \n2)  нипель 1/2 н.н. 1шт"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
@@ -32,7 +32,7 @@ class BlankFragment4_1 : Fragment() {
                 .commitNow()
         }
         binding.buttonReductorNo.setOnClickListener {
-            ReductorNo = "Редуктор-нет"
+            ReductorNo1 = "Редуктор-нет"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
@@ -47,7 +47,7 @@ class BlankFragment4_1 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment4_1()
-        var ReductorYes: String = ""
-        var ReductorNo: String = ""
+        var ReductorYes1: String = ""
+        var ReductorNo1: String = ""
     }
 }

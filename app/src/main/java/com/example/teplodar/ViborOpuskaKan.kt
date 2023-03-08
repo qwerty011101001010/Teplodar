@@ -19,12 +19,16 @@ class ViborOpuskaKan : AppCompatActivity() {
         }
         binding.buttonTroynik.setOnClickListener{
             val intent = Intent(this,Radiatori::class.java)
-            vibortroynik = "Выбор - Тройник"
+            viboropuskakan = "Выбор - Тройник"
+            startActivity(intent)
+        }
+        binding.buttonBack2.setOnClickListener{
+            val intent = Intent(this,OtpuskKanal::class.java)
             startActivity(intent)
         }
     }
     companion object{
         var viboropuskakan:String=""
-        var vibortroynik:String=""
+
     }
 }

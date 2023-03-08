@@ -10,32 +10,31 @@ import com.example.teplodar.R
 import com.example.teplodar.Radiatory2.Companion.znachKolRadio
 import com.example.teplodar.databinding.*
 
-class BlankFragmentRadio : Fragment() {
-    lateinit var binding: FragmentBlankRadioBinding
+class BlankFragmentRadio2 : Fragment() {
+    lateinit var binding: FragmentBlankRadio2Binding
 
     @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBlankRadioBinding.inflate(inflater)
+        binding = FragmentBlankRadio2Binding.inflate(inflater)
 
         binding.buttonMetalloplast.setOnClickListener{
 
 
 
-            if(znachKolRadio >1.toString()) {
-                otvetRadio = "ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба МП 16 2м."
-
+            if(znachKolRadio > 2.toString()) {
+                otvetRadio2 = "ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба МП 16 2м."
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.frameLayout1, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.frameLayout1, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else
             {
-                otvetRadio = "ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба МП 16 2м."
+                otvetRadio2 = "ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба МП 16 2м."
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
@@ -46,18 +45,17 @@ class BlankFragmentRadio : Fragment() {
         }
         binding.buttonShitik.setOnClickListener{
 
-            if(znachKolRadio > 1.toString()) {
-                otvetRadio="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
-
+            if(znachKolRadio > 2.toString()) {
+                otvetRadio2="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else
             {
-                otvetRadio="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
+                otvetRadio2="ОСНОВНЫЕ\n- Уголки 16 90º 4 шт.\n- Муфты 16 2 шт.\n- Труба сшитик 16 2м"
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
@@ -67,20 +65,17 @@ class BlankFragmentRadio : Fragment() {
         }
         binding.buttonKran12.setOnClickListener{
 
-            if(znachKolRadio > 1.toString()) {
-
-
-                otvetRadio="Кран 1/2 - 2 шт."
-
+            if(znachKolRadio > 2.toString()) {
+                otvetRadio2="Кран 1/2 - 2 шт."
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else
             {
-                otvetRadio="Кран 1/2 - 2 шт."
+                otvetRadio2="Кран 1/2 - 2 шт."
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
@@ -92,18 +87,17 @@ class BlankFragmentRadio : Fragment() {
 
         binding.buttonEvrokonus.setOnClickListener{
 
-            if(znachKolRadio > 1.toString()) {
-                otvetRadio="Евроконус 16 - 2 шт"
-
+            if(znachKolRadio > 2.toString()) {
+                otvetRadio2="Евроконус 16 - 2 шт"
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.FrameRadio, BlankFragmentRadio2.newInstance())
+                    .replace(R.id.FrameRadio, BlankFragmentRadio.newInstance())
                     .commitNow()
             }
             else
             {
-                otvetRadio="Евроконус 16 - 2 шт"
+                otvetRadio2="Евроконус 16 - 2 шт"
                 activity!!
                     .supportFragmentManager
                     .beginTransaction()
@@ -118,10 +112,9 @@ class BlankFragmentRadio : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = BlankFragmentRadio()
-        var otvetRadio: String = ""
-        var otvetRadio3: String = ""
-        var radio=0
+        fun newInstance() = BlankFragmentRadio2()
+        var otvetRadio2: String = ""
+
 
     }
 }

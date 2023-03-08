@@ -14,7 +14,17 @@ class OtpuskKanal : AppCompatActivity() {
         setContentView(binding.root)
         binding.buttonYes.setOnClickListener{
             val intent = Intent(this,ViborOpuskaKan::class.java)
-            viborkanal = "Отпуск канализации - Да\n1) Рем.Раструб\n2) Труба 110 - 1м\n3) Компенсационная муфта 110"
+            viborkanal = "Опуск канализации - Да\n1) Рем.Раструб\n2) Труба 110 - 1м\n3) Компенсационная муфта 110\n"
+            startActivity(intent)
+        }
+        binding.buttonNo.setOnClickListener{
+            val intent = Intent(this,Radiatori::class.java)
+            viborkanal = "0пуск канализации - нет"
+            startActivity(intent)
+        }
+        binding.buttonBack.setOnClickListener{
+            val intent = Intent(this,viborObject::class.java)
+
             startActivity(intent)
         }
     }

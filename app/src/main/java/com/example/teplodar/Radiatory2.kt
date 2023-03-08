@@ -22,6 +22,11 @@ class Radiatory2 : AppCompatActivity() {
             znachKolRadio=binding.numberRadio.text.toString()
             startActivity(intent)
         }
+        binding.buttonBack4.setOnClickListener{
+            val intent = Intent(this,OtpuskKanal::class.java)
+            startActivity(intent)
+        }
+
 
 
     }

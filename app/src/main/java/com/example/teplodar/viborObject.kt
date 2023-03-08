@@ -13,13 +13,27 @@ class viborObject : AppCompatActivity() {
         setContentView(binding.root)
         binding.buttonKvartira.setOnClickListener{
             val intent = Intent(this,OtpuskKanal::class.java)
-            otvetKv = "Объект - Квартира"
+            otvetObject = "Объект - Квартира"
+            startActivity(intent)
+        }
+        binding.buttonHome.setOnClickListener{
+            val intent = Intent(this,OtpuskKanal::class.java)
+            otvetObject = "Объект - Дом"
+            startActivity(intent)
+        }
+        binding.buttonHome3.setOnClickListener{
+            val intent = Intent(this,OtpuskKanal::class.java)
+            otvetObject = "Объект - Ангар"
+            startActivity(intent)
+        }
+        binding.buttonBack.setOnClickListener{
+            val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
     }
     companion object
     {
-        var otvetKv:String = ""
+        var otvetObject:String = ""
     }
 
 }

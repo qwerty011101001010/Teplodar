@@ -12,10 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.buttonNextLayout.setOnClickListener{
-            val intent = Intent(this, Resoult::class.java)
-            startActivity(intent)
-        }
 
         binding.buttonPO.setOnClickListener{
             val intent = Intent(this,viborObject::class.java)

@@ -20,21 +20,21 @@ class BlankFragment7 : Fragment() {
     ): View? {
         binding = FragmentBlank7Binding.inflate(inflater)
 
-        binding.buttonPodvodYes.setOnClickListener {
+        binding.buttonPodvodMetal.setOnClickListener {
             //cдесь записывать данные
-            PodvodYes = "Подвод - Да\nОСНОВНЫЕ\n1) кран 1/2 "
+            Podvod = "Подвод - Да\nОСНОВНЫЕ\n1) кран 1/2 "
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment8.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
                 .commitNow()
         }
-        binding.buttonPodvodNo.setOnClickListener {
-            PodvodNo = "Подвод - нет"
+        binding.buttonPodvodPoly.setOnClickListener {
+            Podvod = "Подвод - нет"
             activity!!
                 .supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.frameLayout1, BlankFragment8.newInstance())
+                .replace(R.id.frameLayout1, BlankFragment9.newInstance())
                 .commitNow()
         }
 
@@ -45,7 +45,6 @@ class BlankFragment7 : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment7()
-        var PodvodYes: String = ""
-        var PodvodNo: String = ""
+        var Podvod: String = ""
     }
 }
